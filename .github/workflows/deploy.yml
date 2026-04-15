@@ -10,5 +10,5 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Deploy
-        run: echo "Deploying to staging environment..."
+      - name: Jira Deployment Notification
+        run: echo "Deployment to staging complete for MOB issues"
