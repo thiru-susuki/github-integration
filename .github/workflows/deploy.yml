@@ -7,8 +7,17 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
+    environment:
+      name: staging
+      url: https://thiru-susuki.github.io/github-integration/
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Jira Deployment Notification
-        run: echo "Deployment to staging complete for MOB issues"
+
+      - name: Simulate Deployment
+        run: echo "Deploying to staging..."
+
+      - name: Mark Deployment Success
+        run: echo "Deployment completed"
